@@ -1,0 +1,41 @@
+body {
+	font-size: 14px;
+	font-family: Parkavenue, cursive;
+	background-color: #f0f0f0;
+}
+
+.artigo {
+	width: 80%;
+	margin: 20px auto;
+	columns: 3;
+	text-align: justify;
+
+}
+
+.artigo > .conteudo {
+	margin: 0 0 20px 0;
+}
+
+.artigo h1 {
+	font-family: "Trebuchet MS";
+	text-transform: capitalize;
+	font-size: 3rem;
+}
+
+.artigo p:first-child:first-letter {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+@media (max-width: 767px) {
+	.artigo {
+		columns: 2;
+	}
+}
+
+@media (max-width: 479px) {
+	.artigo {
+		columns: 1;
+	}
+}
+

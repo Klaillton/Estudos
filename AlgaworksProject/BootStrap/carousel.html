@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carousel</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Criando um carousel</h1>
+
+		<div id="carrosel" class="carousel slide" data-ride="carousel" data-interval="1000">
+			<ol class="carousel-indicators">
+				<li data-target="#carrosel" data-slide-to="0" class="active"></li>
+				<li data-target="#carrosel" data-slide-to="1"></li>
+				<li data-target="#carrosel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="https://unsplash.it/1280/720?random">
+					<div class="carousel-caption">
+						<h3>Slide um</h3>
+						<p>Este é um slide muito bonito</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="https://unsplash.it/1279/720?random">
+					<div class="carousel-caption">
+						<h3>Slide dois</h3>
+						<p>Este é um slide muito bonito</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="https://unsplash.it/1278/720?random">
+					<div class="carousel-caption">
+						<h3>Slide três</h3>
+						<p>Este é um slide muito bonito</p>
+					</div>
+				</div>
+			</div>
+			<a href="#carrosel" class="left carousel-control" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a><a href="#carrosel" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
